@@ -1,0 +1,90 @@
+{
+  "realisations": [
+    {
+      "id": 1,
+      "categorie": "Mariage",
+      "titre": "Léa & Tom",
+      "infos": "Club Haussman · 130 invités",
+      "image": "/assets/images/realisation-1.jpg"
+    },
+    {
+      "id": 2,
+      "categorie": "Séminaire",
+      "titre": "Kick-off Acme",
+      "infos": "Yoyo Palais de Tokyo · 220 pers.",
+      "image": "/assets/images/realisation-2.jpg"
+    },
+    {
+      "id": 3,
+      "categorie": "Anniversaire",
+      "titre": "Les 40 ans de Sam",
+      "infos": "Orangerie Parc · 90 invités",
+      "image": "/assets/images/realisation-3.jpg"
+    }
+  ],
+  "salles": [
+    {
+      "id": 1,
+      "nom": "Club Haussman",
+      "lieu": "Paris 8e",
+      "invites": 150,
+      "type": "planeo",
+      "image": "/assets/images/salle-1.jpg"
+    },
+    {
+      "id": 2,
+      "nom": "Jardin de l’Orangerie",
+      "lieu": "Yvelines",
+      "invites": 150,
+      "type": "planeo",
+      "image": "/assets/images/salle-2.jpg"
+    },
+    {
+      "id": 3,
+      "nom": "Orangerie Parc",
+      "lieu": "Essonne",
+      "invites": 180,
+      "type": "partenaire",
+      "image": "/assets/images/salle-3.jpg"
+    },
+    {
+      "id": 4,
+      "nom": "Yoyo Palais de Tokyo",
+      "lieu": "Paris 16e",
+      "invites": 300,
+      "type": "partenaire",
+      "image": "/assets/images/salle-4.jpg"
+    }
+  ],
+  "typesEvenement": [
+    {
+      "id": 1,
+      "titre": "Mariage",
+      "description": "Cérémonie, réception et soirée, de A à Z.",
+      "couleur": "corail",
+      "image": "/assets/images/mariage.jpg"
+    },
+    {
+      "id": 2,
+      "titre": "Séminaire",
+      "description": "Salles équipées et journées d’étude.",
+      "couleur": "bleu",
+      "image": "/assets/images/seminaire.jpg"
+    },
+    {
+      "id": 3,
+      "titre": "Anniversaire",
+      "description": "Dîner ou soirée privée.",
+      "couleur": "jaune",
+      "image": "/assets/images/realisation-3.jpg"
+    },
+    {
+      "id": 4,
+      "titre": "Soirée d’entreprise",
+      "description": "Afterwork, fin d’année, lancement.",
+      "couleur": "corail",
+      "image": "/assets/images/soiree.jpg"
+    }
+  ],
+  "recherches": []
+}
