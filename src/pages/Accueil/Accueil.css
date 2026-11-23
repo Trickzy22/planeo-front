@@ -1,0 +1,61 @@
+.accueil .header {
+  position: fixed;
+  left: 50%;
+  width: 100%;
+  max-width: 480px;
+  transform: translateX(-50%);
+}
+
+.accueil__hero {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  min-height: 688px;
+  padding: 88px var(--spacing-md) 28px;
+  background: var(--color-bg-inverse) url('/assets/images/realisation-1.jpg') center / cover no-repeat;
+}
+
+.accueil__hero-degrade {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 27, 36, 0.15) 0%,
+    rgba(0, 27, 36, 0.3) 40%,
+    rgba(0, 27, 36, 0.9) 100%
+  );
+}
+
+.accueil__hero-contenu {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+  width: 100%;
+}
+
+.accueil__hero-texte {
+  margin: 0;
+  font-size: 18px;
+  line-height: 28px;
+  color: var(--color-text-inverse);
+}
+
+.accueil__sections {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xl);
+  padding-top: var(--spacing-xl);
+}
+
+.accueil__section {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xl);
+}
+
+.accueil__entete-salles {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}

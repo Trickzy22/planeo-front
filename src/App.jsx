@@ -1,5 +1,10 @@
-import { Routes } from 'react-router-dom'
+import { Routes, Route } from 'react-router-dom'
+import Accueil from './pages/Accueil/Accueil'
 
 export default function App() {
-  return <Routes />
+  return (
+    <Routes>
+      <Route path="/" element={<Accueil />} />
+    </Routes>
+  )
 }
