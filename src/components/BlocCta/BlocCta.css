@@ -1,0 +1,23 @@
+.bloc-cta {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+  padding: var(--spacing-xl) var(--spacing-lg);
+  border-radius: var(--radius-xl);
+  background: var(--color-tint-yellow-solid);
+  box-shadow: var(--shadow-l);
+}
+
+.bloc-cta__titre {
+  margin: 0;
+  font-size: 32px;
+  line-height: 36px;
+  font-weight: 900;
+  letter-spacing: -0.48px;
+}
+
+.bloc-cta__texte {
+  margin: 0;
+  font-size: 16px;
+  line-height: 24px;
+}
