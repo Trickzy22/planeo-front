@@ -1,0 +1,57 @@
+.champ {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xs);
+  font-family: var(--font-formulaire);
+}
+
+.champ__label {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 500;
+  letter-spacing: -0.07px;
+}
+
+.champ__zone {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  height: 52px;
+  padding: 0 18px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  background: var(--color-bg-surface);
+  transition: box-shadow 0.2s, border-color 0.2s;
+}
+
+.champ__zone:focus-within {
+  border-color: var(--color-border-focus);
+  box-shadow: 0 0 0 4px rgba(0, 195, 255, 0.35);
+}
+
+.champ__zone--valide {
+  background: var(--color-tint-blue-bg);
+}
+
+.champ__zone--erreur {
+  border-color: var(--color-tint-coral-solid);
+}
+
+.champ__input {
+  flex: 1;
+  min-width: 0;
+  border: none;
+  outline: none;
+  background: transparent;
+  font: inherit;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.16px;
+  color: var(--color-text-primary);
+}
+
+.champ__erreur {
+  margin: 0;
+  font-size: 13px;
+  color: var(--color-tint-coral-solid);
+}
