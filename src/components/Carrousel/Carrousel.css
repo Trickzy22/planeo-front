@@ -1,0 +1,44 @@
+.carrousel {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xl);
+}
+
+.carrousel__piste {
+  display: flex;
+  gap: var(--spacing-md);
+  padding: 4px var(--spacing-md) 20px;
+  margin-bottom: -20px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-padding: 0 var(--spacing-md);
+  scrollbar-width: none;
+}
+
+.carrousel__piste::-webkit-scrollbar {
+  display: none;
+}
+
+.carrousel__piste > * {
+  flex: 0 0 260px;
+  scroll-snap-align: start;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: var(--spacing-xs);
+}
+
+.pagination__point {
+  width: 8px;
+  height: 8px;
+  border-radius: var(--radius-full);
+  background: var(--color-bg-disabled);
+  transition: width 0.2s, background 0.2s;
+}
+
+.pagination__point--actif {
+  width: 24px;
+  background: var(--color-bg-brand);
+}

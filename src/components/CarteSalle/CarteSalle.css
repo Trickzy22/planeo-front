@@ -1,0 +1,41 @@
+.carte-salle {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border-radius: var(--radius-lg);
+  background: var(--color-bg-surface);
+  box-shadow: var(--shadow-m);
+}
+
+.carte-salle__visuel {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.carte-salle__contenu {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xs);
+  padding: var(--spacing-md);
+}
+
+.carte-salle__nom {
+  margin: 0;
+  overflow: hidden;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.carte-salle__infos {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-2xs);
+  margin: 0;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--color-text-secondary);
+}

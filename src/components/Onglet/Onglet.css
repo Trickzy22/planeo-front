@@ -1,0 +1,26 @@
+.liste-onglets {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-xs);
+}
+
+.onglet {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  padding: 0 var(--spacing-md);
+  border-radius: var(--radius-full);
+  background: var(--color-bg-muted);
+  color: var(--color-text-primary);
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 600;
+  white-space: nowrap;
+  transition: background 0.2s;
+}
+
+.onglet--actif {
+  background: var(--color-bg-brand);
+  color: var(--color-text-on-brand);
+  box-shadow: var(--shadow-brand);
+}

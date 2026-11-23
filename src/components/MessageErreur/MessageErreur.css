@@ -1,0 +1,10 @@
+.message-erreur {
+  margin: 0;
+  padding: var(--spacing-md);
+  border-radius: var(--radius-lg);
+  background: var(--color-tint-coral-bg);
+  color: var(--color-tint-coral-text);
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 600;
+}

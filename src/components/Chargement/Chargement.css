@@ -1,0 +1,25 @@
+.chargement {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-sm);
+  padding: var(--spacing-xl) var(--spacing-md);
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--color-text-secondary);
+}
+
+.chargement__rond {
+  width: 20px;
+  height: 20px;
+  border: 3px solid var(--color-bg-disabled);
+  border-top-color: var(--color-bg-brand);
+  border-radius: var(--radius-full);
+  animation: chargement-rotation 0.8s linear infinite;
+}
+
+@keyframes chargement-rotation {
+  to {
+    transform: rotate(360deg);
+  }
+}

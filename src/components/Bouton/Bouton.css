@@ -1,0 +1,47 @@
+.bouton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-xs);
+  height: 52px;
+  padding: 0 var(--spacing-lg);
+  border-radius: var(--radius-full);
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.bouton:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.bouton--pleine-largeur {
+  width: 100%;
+}
+
+.bouton--primaire {
+  background: var(--color-bg-brand);
+  color: var(--color-text-on-brand);
+  box-shadow: var(--shadow-brand);
+}
+
+.bouton--secondaire {
+  background: var(--color-tint-blue-bg);
+  color: var(--color-tint-blue-text);
+}
+
+.bouton--blanc {
+  background: var(--color-bg-surface);
+  color: var(--color-text-primary);
+  box-shadow: 0 4px 6px rgba(0, 27, 36, 0.06), 0 1px 1px rgba(0, 27, 36, 0.06);
+}
+
+.bouton--texte {
+  height: 40px;
+  padding: 0 var(--spacing-md);
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--color-text-brand);
+}
