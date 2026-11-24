@@ -39,3 +39,42 @@
   line-height: 24px;
   color: var(--color-text-secondary);
 }
+
+.carte-salle__badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px var(--spacing-2xs);
+}
+
+/* Variante avec prix (page Résultats) */
+.carte-salle--detaillee .carte-salle__visuel {
+  height: 220px;
+}
+
+.carte-salle--detaillee .carte-salle__nom {
+  font-size: 21px;
+  line-height: 28px;
+  letter-spacing: -0.105px;
+}
+
+.carte-salle__prix {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: var(--spacing-xs);
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--color-text-secondary);
+}
+
+.carte-salle__pastille-prix {
+  padding: var(--spacing-2xs) var(--spacing-sm);
+  border-radius: var(--radius-full);
+  background: var(--color-tint-yellow-bg);
+  color: var(--color-text-primary);
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 800;
+  letter-spacing: -0.1px;
+  white-space: nowrap;
+}

@@ -1,0 +1,33 @@
+.resultats__contenu {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xl);
+  padding: var(--spacing-sm) var(--spacing-md) var(--spacing-xl);
+}
+
+.resultats__criteres {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+.resultats__compteur {
+  margin: 0 0 var(--spacing-2xs);
+  font-size: 21px;
+  line-height: 28px;
+  font-weight: 700;
+  letter-spacing: -0.105px;
+}
+
+.resultats__detail {
+  margin: 0;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--color-text-secondary);
+}
+
+.resultats__liste {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-lg);
+}

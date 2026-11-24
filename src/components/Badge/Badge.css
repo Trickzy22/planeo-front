@@ -20,3 +20,8 @@
   background: var(--color-tint-orange-bg);
   color: var(--color-tint-orange-text);
 }
+
+.badge--vert {
+  background: var(--color-tint-green-bg);
+  color: var(--color-tint-green-text);
+}
