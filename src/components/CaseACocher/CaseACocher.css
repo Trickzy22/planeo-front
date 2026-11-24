@@ -1,0 +1,33 @@
+.case-a-cocher {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  min-height: 24px;
+  font-size: 16px;
+  line-height: 24px;
+  cursor: pointer;
+}
+
+.case-a-cocher input {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.case-a-cocher__case {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border: 2px solid var(--color-border-default);
+  border-radius: var(--radius-sm);
+  background: var(--color-bg-surface);
+}
+
+.case-a-cocher input:checked + .case-a-cocher__case {
+  border: none;
+  background: var(--color-bg-brand);
+}
+
