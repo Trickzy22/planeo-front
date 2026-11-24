@@ -34,7 +34,13 @@ export default function FicheSalle() {
         setInterlocuteur(donneesInterlocuteur)
         document.title = `${donneesSalle.nom} · Planeo`
       })
-      .catch(() => setErreur('Impossible de charger ce lieu. Vérifiez que l’API est lancée.'))
+      .catch((erreur) =>
+        setErreur(
+          erreur.message === 'introuvable'
+            ? 'Ce lieu n’existe pas.'
+            : 'Impossible de charger ce lieu. Vérifiez que l’API est lancée.'
+        )
+      )
       .finally(() => setChargement(false))
   }, [id])
 

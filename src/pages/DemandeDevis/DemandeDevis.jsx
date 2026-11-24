@@ -49,7 +49,13 @@ export default function DemandeDevis() {
         setSalle(donnees)
         document.title = `Demande de devis · ${donnees.nom} · Planeo`
       })
-      .catch(() => setErreurChargement('Impossible de charger ce lieu. Vérifiez que l’API est lancée.'))
+      .catch((erreur) =>
+        setErreurChargement(
+          erreur.message === 'introuvable'
+            ? 'Ce lieu n’existe pas.'
+            : 'Impossible de charger ce lieu. Vérifiez que l’API est lancée.'
+        )
+      )
       .finally(() => setChargement(false))
   }, [id])
 

@@ -2,6 +2,9 @@ const URL_API = 'http://localhost:3001'
 
 export async function recupererDonnees(ressource) {
   const reponse = await fetch(`${URL_API}/${ressource}`)
+  if (reponse.status === 404) {
+    throw new Error('introuvable')
+  }
   if (!reponse.ok) {
     throw new Error('Erreur lors du chargement des données')
   }
