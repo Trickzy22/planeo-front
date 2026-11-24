@@ -1,0 +1,130 @@
+.fiche-salle {
+  padding-bottom: 76px;
+}
+
+.fiche-salle__contenu {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xl);
+  padding: var(--spacing-sm) 0 var(--spacing-xl);
+}
+
+.fiche-salle__erreur {
+  padding-top: var(--spacing-md);
+  padding-bottom: var(--spacing-xl);
+}
+
+.fiche-salle__photo {
+  flex: 0 0 340px;
+  width: 340px;
+  height: 260px;
+  border-radius: var(--radius-xl);
+  object-fit: cover;
+}
+
+.fiche-salle__infos {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+}
+
+.fiche-salle__badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-xs);
+}
+
+.fiche-salle__nom {
+  margin: 0;
+  font-size: 32px;
+  line-height: 36px;
+  font-weight: 900;
+  letter-spacing: -0.48px;
+}
+
+.fiche-salle__texte {
+  margin: 0;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--color-text-secondary);
+}
+
+.fiche-salle__capacites {
+  display: flex;
+  gap: var(--spacing-xs);
+}
+
+.fiche-salle__capacite {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: var(--spacing-2xs);
+  padding: var(--spacing-sm);
+  border-radius: var(--radius-lg);
+}
+
+.fiche-salle__capacite--bleu {
+  background: var(--color-tint-blue-bg);
+}
+
+.fiche-salle__capacite--jaune {
+  background: var(--color-tint-yellow-bg);
+}
+
+.fiche-salle__capacite--vert {
+  background: var(--color-tint-green-bg);
+}
+
+.fiche-salle__capacite-valeur,
+.fiche-salle__titre {
+  margin: 0;
+  font-size: 21px;
+  line-height: 28px;
+  font-weight: 700;
+  letter-spacing: -0.105px;
+}
+
+.fiche-salle__section {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+.fiche-salle__evenements {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xl);
+}
+
+.fiche-salle__plan {
+  width: 100%;
+  height: 180px;
+  border-radius: var(--radius-lg);
+  object-fit: cover;
+}
+
+.fiche-salle__barre {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--spacing-sm);
+  width: 100%;
+  max-width: 480px;
+  padding: var(--spacing-sm) var(--spacing-md);
+  border-radius: 24px 24px 0 0;
+  background: var(--color-bg-surface);
+  box-shadow: var(--shadow-l);
+  transform: translateX(-50%);
+}
+
+.fiche-salle__prix {
+  margin: 0;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 800;
+  letter-spacing: -0.1px;
+}

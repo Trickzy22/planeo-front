@@ -1,0 +1,24 @@
+.prix-detaille {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+  padding: var(--spacing-md);
+  border-radius: var(--radius-lg);
+  background: var(--color-bg-surface);
+  box-shadow: var(--shadow-m);
+}
+
+.prix-detaille__titre {
+  margin: 0;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 700;
+  letter-spacing: 0.96px;
+  text-transform: uppercase;
+  color: var(--color-text-secondary);
+}
+
+.prix-detaille__separateur {
+  height: 1px;
+  background: var(--color-border-default);
+}
