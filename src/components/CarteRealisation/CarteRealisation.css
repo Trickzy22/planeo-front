@@ -41,3 +41,14 @@
   font-weight: 500;
   color: var(--color-text-secondary);
 }
+
+.carte-realisation__media {
+  position: relative;
+}
+
+.carte-realisation__play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
