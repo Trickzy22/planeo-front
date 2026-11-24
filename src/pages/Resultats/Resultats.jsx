@@ -106,7 +106,7 @@ export default function Resultats() {
         </div>
 
         {chargement && <Chargement />}
-        {erreur && <MessageErreur message={erreur} />}
+        {erreur && <MessageErreur message={erreur} avecReessayer />}
 
         {!chargement && !erreur && sallesDisponibles.length === 0 && (
           <AucunResultat

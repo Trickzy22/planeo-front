@@ -72,7 +72,7 @@ export default function Recherche() {
         <div className="recherche__formulaire">
           <h2 className="recherche__question">Quel événement ?</h2>
           {chargement && <Chargement />}
-          {erreurChargement && <MessageErreur message={erreurChargement} />}
+          {erreurChargement && <MessageErreur message={erreurChargement} avecReessayer />}
           {!chargement && !erreurChargement && (
             <ListeOnglets
               options={typesEvenement}

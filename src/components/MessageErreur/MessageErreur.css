@@ -1,10 +1,28 @@
 .message-erreur {
-  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--spacing-sm);
   padding: var(--spacing-md);
   border-radius: var(--radius-lg);
   background: var(--color-tint-coral-bg);
   color: var(--color-tint-coral-text);
+}
+
+.message-erreur__texte {
+  margin: 0;
   font-size: 14px;
   line-height: 20px;
   font-weight: 600;
+}
+
+.message-erreur__bouton {
+  min-height: 44px;
+  padding: 0 var(--spacing-md);
+  border-radius: var(--radius-full);
+  background: var(--color-bg-surface);
+  color: var(--color-tint-coral-text);
+  font-size: 14px;
+  font-weight: 700;
 }

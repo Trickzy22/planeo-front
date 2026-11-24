@@ -109,7 +109,7 @@ export default function DemandeDevis() {
 
       {erreurChargement && (
         <div className="conteneur demande-devis__erreur">
-          <MessageErreur message={erreurChargement} />
+          <MessageErreur message={erreurChargement} avecReessayer />
         </div>
       )}
 

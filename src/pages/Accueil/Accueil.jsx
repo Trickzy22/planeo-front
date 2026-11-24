@@ -72,7 +72,7 @@ export default function Accueil() {
 
         {erreur && (
           <div className="conteneur">
-            <MessageErreur message={erreur} />
+            <MessageErreur message={erreur} avecReessayer />
           </div>
         )}
 

@@ -54,7 +54,7 @@ export default function FicheSalle() {
 
       {erreur && (
         <div className="conteneur fiche-salle__erreur">
-          <MessageErreur message={erreur} />
+          <MessageErreur message={erreur} avecReessayer />
         </div>
       )}
 
