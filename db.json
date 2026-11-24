@@ -29,7 +29,8 @@
       "lieu": "Paris 8e",
       "invites": 150,
       "type": "planeo",
-      "image": "/assets/images/salle-1.jpg"
+      "image": "/assets/images/salle-1.jpg",
+      "prix": 14200
     },
     {
       "id": 2,
@@ -37,7 +38,8 @@
       "lieu": "Yvelines",
       "invites": 150,
       "type": "planeo",
-      "image": "/assets/images/salle-2.jpg"
+      "image": "/assets/images/salle-2.jpg",
+      "prix": 13800
     },
     {
       "id": 3,
@@ -45,7 +47,8 @@
       "lieu": "Essonne",
       "invites": 180,
       "type": "partenaire",
-      "image": "/assets/images/salle-3.jpg"
+      "image": "/assets/images/salle-3.jpg",
+      "prix": 14900
     },
     {
       "id": 4,
@@ -53,7 +56,8 @@
       "lieu": "Paris 16e",
       "invites": 300,
       "type": "partenaire",
-      "image": "/assets/images/salle-4.jpg"
+      "image": "/assets/images/salle-4.jpg",
+      "prix": 14800
     }
   ],
   "typesEvenement": [
