@@ -25,3 +25,8 @@
   background: var(--color-tint-green-bg);
   color: var(--color-tint-green-text);
 }
+
+.badge--jaune {
+  background: var(--color-tint-yellow-bg);
+  color: var(--color-tint-yellow-text);
+}
