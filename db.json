@@ -30,7 +30,63 @@
       "invites": 150,
       "type": "planeo",
       "image": "/assets/images/salle-1.jpg",
-      "prix": 14200
+      "prix": 14200,
+      "description": "Club privatisable sous verrière, en plein cœur du Triangle d’or.",
+      "photos": [
+        "/assets/images/club-haussman-1.jpg",
+        "/assets/images/club-haussman-2.png",
+        "/assets/images/club-haussman-3.jpg"
+      ],
+      "capacites": {
+        "assis": 150,
+        "cocktail": 220,
+        "surface": 400
+      },
+      "lignesPrix": [
+        {
+          "libelle": "Location du lieu",
+          "montant": 6500
+        },
+        {
+          "libelle": "Traiteur (120 pers.)",
+          "montant": 4800
+        },
+        {
+          "libelle": "Décoration",
+          "montant": 1600
+        },
+        {
+          "libelle": "Technique son & lumière",
+          "montant": 1300
+        }
+      ],
+      "equipements": [
+        "Son & lumière",
+        "Cuisine traiteur",
+        "Vestiaire",
+        "Accès PMR",
+        "Parking à 200 m"
+      ],
+      "evenements": [
+        {
+          "id": 1,
+          "categorie": "Mariage",
+          "titre": "Léa & Tom",
+          "infos": "Juin 2025 · 130 invités",
+          "image": "/assets/images/evenement-lea-tom.jpg",
+          "video": false
+        },
+        {
+          "id": 2,
+          "categorie": "Séminaire",
+          "titre": "Offsite Lumen",
+          "infos": "Mars 2025 · 90 pers.",
+          "image": "/assets/images/evenement-offsite-lumen.jpg",
+          "video": true
+        }
+      ],
+      "adresse": "23 Rue Taitbout, Paris 9e · Métro Lafayette Chaussée d’Antin",
+      "plan": "/assets/images/plan-club-haussman.png"
     },
     {
       "id": 2,
@@ -39,7 +95,43 @@
       "invites": 150,
       "type": "planeo",
       "image": "/assets/images/salle-2.jpg",
-      "prix": 13800
+      "prix": 13800,
+      "description": "Jardin et orangerie privatisables, au calme, à 40 minutes de Paris.",
+      "photos": [
+        "/assets/images/salle-2.jpg"
+      ],
+      "capacites": {
+        "assis": 150,
+        "cocktail": 200,
+        "surface": 350
+      },
+      "lignesPrix": [
+        {
+          "libelle": "Location du lieu",
+          "montant": 6100
+        },
+        {
+          "libelle": "Traiteur (120 pers.)",
+          "montant": 4800
+        },
+        {
+          "libelle": "Décoration",
+          "montant": 1600
+        },
+        {
+          "libelle": "Technique son & lumière",
+          "montant": 1300
+        }
+      ],
+      "equipements": [
+        "Jardin",
+        "Cuisine traiteur",
+        "Accès PMR",
+        "Parking sur place"
+      ],
+      "evenements": [],
+      "adresse": "Yvelines · Parking sur place",
+      "plan": ""
     },
     {
       "id": 3,
@@ -48,7 +140,52 @@
       "invites": 180,
       "type": "partenaire",
       "image": "/assets/images/salle-3.jpg",
-      "prix": 14900
+      "prix": 14900,
+      "description": "Orangerie lumineuse ouverte sur un parc arboré.",
+      "photos": [
+        "/assets/images/salle-3.jpg"
+      ],
+      "capacites": {
+        "assis": 180,
+        "cocktail": 250,
+        "surface": 450
+      },
+      "lignesPrix": [
+        {
+          "libelle": "Location du lieu",
+          "montant": 7200
+        },
+        {
+          "libelle": "Traiteur (120 pers.)",
+          "montant": 4800
+        },
+        {
+          "libelle": "Décoration",
+          "montant": 1600
+        },
+        {
+          "libelle": "Technique son & lumière",
+          "montant": 1300
+        }
+      ],
+      "equipements": [
+        "Son & lumière",
+        "Cuisine traiteur",
+        "Parc",
+        "Parking sur place"
+      ],
+      "evenements": [
+        {
+          "id": 3,
+          "categorie": "Anniversaire",
+          "titre": "Les 40 ans de Sam",
+          "infos": "90 invités",
+          "image": "/assets/images/realisation-3.jpg",
+          "video": false
+        }
+      ],
+      "adresse": "Essonne · Parking sur place",
+      "plan": ""
     },
     {
       "id": 4,
@@ -57,7 +194,51 @@
       "invites": 300,
       "type": "partenaire",
       "image": "/assets/images/salle-4.jpg",
-      "prix": 14800
+      "prix": 14800,
+      "description": "Club événementiel au cœur du Palais de Tokyo.",
+      "photos": [
+        "/assets/images/salle-4.jpg"
+      ],
+      "capacites": {
+        "assis": 300,
+        "cocktail": 600,
+        "surface": 800
+      },
+      "lignesPrix": [
+        {
+          "libelle": "Location du lieu",
+          "montant": 7100
+        },
+        {
+          "libelle": "Traiteur (120 pers.)",
+          "montant": 4800
+        },
+        {
+          "libelle": "Décoration",
+          "montant": 1600
+        },
+        {
+          "libelle": "Technique son & lumière",
+          "montant": 1300
+        }
+      ],
+      "equipements": [
+        "Son & lumière",
+        "Vestiaire",
+        "Accès PMR"
+      ],
+      "evenements": [
+        {
+          "id": 2,
+          "categorie": "Séminaire",
+          "titre": "Kick-off Acme",
+          "infos": "220 pers.",
+          "image": "/assets/images/realisation-2.jpg",
+          "video": false
+        }
+      ],
+      "adresse": "Paris 16e",
+      "plan": ""
     }
   ],
   "typesEvenement": [
