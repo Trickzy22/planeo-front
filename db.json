@@ -34,7 +34,7 @@
       "description": "Club privatisable sous verrière, en plein cœur du Triangle d’or.",
       "photos": [
         "/assets/images/club-haussman-1.jpg",
-        "/assets/images/club-haussman-2.png",
+        "/assets/images/club-haussman-2.jpg",
         "/assets/images/club-haussman-3.jpg"
       ],
       "capacites": {
@@ -86,7 +86,7 @@
         }
       ],
       "adresse": "23 Rue Taitbout, Paris 9e · Métro Lafayette Chaussée d’Antin",
-      "plan": "/assets/images/plan-club-haussman.png"
+      "plan": "/assets/images/plan-club-haussman.jpg"
     },
     {
       "id": 2,
