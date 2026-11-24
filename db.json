@@ -86,5 +86,27 @@
       "image": "/assets/images/soiree.jpg"
     }
   ],
-  "recherches": []
+  "recherches": [],
+  "demandes": [
+    {
+      "id": 1,
+      "prenom": "Alexandre",
+      "lieu": "Club Haussman",
+      "evenement": "Mariage",
+      "date": "12/06/2027",
+      "invites": "120",
+      "prestations": "Déco, technique",
+      "budget": "15 000 €",
+      "prixEstime": "14 200 €"
+    }
+  ],
+  "interlocuteurs": [
+    {
+      "id": 1,
+      "initiales": "JM",
+      "prenom": "Julie",
+      "nom": "Julie Moreau",
+      "role": "Chargée de projet"
+    }
+  ]
 }
