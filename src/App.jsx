@@ -17,6 +17,7 @@ export default function App() {
         <Route path="/salles/:id" element={<FicheSalle />} />
         <Route path="/salles/:id/devis" element={<DemandeDevis />} />
         <Route path="/confirmation" element={<Confirmation />} />
+        <Route path="/confirmation/:id" element={<Confirmation />} />
       </Routes>
     </RechercheProvider>
   )

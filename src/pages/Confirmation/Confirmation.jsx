@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import { useParams } from 'react-router-dom'
 import Header from '../../components/Header/Header'
 import Footer from '../../components/Footer/Footer'
 import Bouton from '../../components/Bouton/Bouton'
@@ -11,6 +12,7 @@ import { recupererDonnees } from '../../services/api'
 import './Confirmation.css'
 
 export default function Confirmation() {
+  const { id = '1' } = useParams()
   const [demande, setDemande] = useState(null)
   const [interlocuteur, setInterlocuteur] = useState(null)
   const [chargement, setChargement] = useState(true)
@@ -19,14 +21,14 @@ export default function Confirmation() {
   useEffect(() => {
     document.title = 'Planeo · Demande envoyée'
 
-    Promise.all([recupererDonnees('demandes/1'), recupererDonnees('interlocuteurs/1')])
+    Promise.all([recupererDonnees(`demandes/${id}`), recupererDonnees('interlocuteurs/1')])
       .then(([donneesDemande, donneesInterlocuteur]) => {
         setDemande(donneesDemande)
         setInterlocuteur(donneesInterlocuteur)
       })
       .catch(() => setErreur('Impossible de charger les données. Vérifiez que l’API est lancée.'))
       .finally(() => setChargement(false))
-  }, [])
+  }, [id])
 
   return (
     <div className="page confirmation">

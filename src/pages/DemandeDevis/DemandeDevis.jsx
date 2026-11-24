@@ -96,7 +96,7 @@ export default function DemandeDevis() {
     setEnvoiEnCours(true)
     setErreurEnvoi('')
     envoyerDonnees('demandes', demande)
-      .then(() => navigate('/confirmation'))
+      .then((demandeEnregistree) => navigate(`/confirmation/${demandeEnregistree.id}`))
       .catch(() => setErreurEnvoi('La demande n’a pas pu être envoyée. Réessayez.'))
       .finally(() => setEnvoiEnCours(false))
   }
