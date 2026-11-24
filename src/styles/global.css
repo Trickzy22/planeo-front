@@ -51,3 +51,8 @@ img {
 .conteneur {
   padding: 0 var(--spacing-md);
 }
+
+:focus-visible {
+  outline: 3px solid var(--color-text-brand);
+  outline-offset: 2px;
+}
