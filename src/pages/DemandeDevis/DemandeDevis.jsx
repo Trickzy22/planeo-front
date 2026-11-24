@@ -105,11 +105,13 @@ export default function DemandeDevis() {
     <div className="page demande-devis">
       <Header />
 
+      <main>
+
       {chargement && <Chargement />}
 
       {erreurChargement && (
         <div className="conteneur demande-devis__erreur">
-          <MessageErreur message={erreurChargement} />
+          <MessageErreur message={erreurChargement} avecReessayer />
         </div>
       )}
 
@@ -223,6 +225,8 @@ export default function DemandeDevis() {
           </div>
         </form>
       )}
+
+      </main>
 
       <Footer />
     </div>

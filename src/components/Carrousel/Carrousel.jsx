@@ -4,7 +4,7 @@ import './Carrousel.css'
 
 const ESPACE = 16
 
-export default function Carrousel({ children, afficherPagination = true, largeurCarte = 260 }) {
+export default function Carrousel({ children, afficherPagination = true, largeurCarte = 260, libelle = 'Carrousel' }) {
   const pisteRef = useRef(null)
   const [indexActif, setIndexActif] = useState(0)
   const total = children.length
@@ -27,7 +27,7 @@ export default function Carrousel({ children, afficherPagination = true, largeur
 
   return (
     <div className="carrousel">
-      <div className="carrousel__piste" ref={pisteRef}>
+      <div className="carrousel__piste" ref={pisteRef} tabIndex={0} role="region" aria-label={libelle}>
         {children}
       </div>
       {afficherPagination && <Pagination total={total} actif={indexActif} onChange={allerA} />}

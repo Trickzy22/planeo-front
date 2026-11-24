@@ -106,7 +106,7 @@ export default function Resultats() {
         </div>
 
         {chargement && <Chargement />}
-        {erreur && <MessageErreur message={erreur} />}
+        {erreur && <MessageErreur message={erreur} avecReessayer />}
 
         {!chargement && !erreur && sallesDisponibles.length === 0 && (
           <AucunResultat
@@ -118,6 +118,7 @@ export default function Resultats() {
 
         {!chargement && !erreur && sallesDisponibles.length > 0 && (
           <div className="resultats__liste">
+            <h2 className="visually-hidden">Liste des lieux disponibles</h2>
             {sallesAffichees.map((salle) => (
               <CarteSalle key={salle.id} {...salle} dispo={date} avecPrix />
             ))}

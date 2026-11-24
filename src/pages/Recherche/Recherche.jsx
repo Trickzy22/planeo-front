@@ -63,6 +63,7 @@ export default function Recherche() {
     <div className="page recherche">
       <Header />
 
+      <main>
       <form className="recherche__contenu" onSubmit={valider} noValidate>
         <div className="recherche__haut">
           <LienRetour libelle="Retour" />
@@ -72,7 +73,7 @@ export default function Recherche() {
         <div className="recherche__formulaire">
           <h2 className="recherche__question">Quel événement ?</h2>
           {chargement && <Chargement />}
-          {erreurChargement && <MessageErreur message={erreurChargement} />}
+          {erreurChargement && <MessageErreur message={erreurChargement} avecReessayer />}
           {!chargement && !erreurChargement && (
             <ListeOnglets
               options={typesEvenement}
@@ -122,6 +123,7 @@ export default function Recherche() {
           </Bouton>
         </div>
       </form>
+      </main>
     </div>
   )
 }

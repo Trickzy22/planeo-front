@@ -38,7 +38,7 @@ export default function Confirmation() {
 
       {erreur && (
         <div className="conteneur">
-          <MessageErreur message={erreur} />
+          <MessageErreur message={erreur} avecReessayer />
         </div>
       )}
 
