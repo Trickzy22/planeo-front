@@ -6,6 +6,7 @@
   --color-bg-brand: #00c3ff;
   --color-bg-highlight: #f4ee3e;
   --color-bg-disabled: #dce3e7;
+  --color-bg-danger-subtle: #fde9e8;
 
   --color-text-primary: #001b24;
   --color-text-secondary: #52636d;
@@ -13,6 +14,7 @@
   --color-text-brand: #007599;
   --color-text-accent: #f1e90e;
   --color-text-on-brand: #001b24;
+  --color-text-danger: #ba1e12;
 
   --color-border: #6f818b;
   --color-border-focus: #00c3ff;
