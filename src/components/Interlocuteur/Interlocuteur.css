@@ -1,0 +1,72 @@
+.interlocuteur {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+  padding: var(--spacing-md);
+  border-radius: var(--radius-lg);
+  background: var(--color-bg-surface);
+  box-shadow: 0 12px 14px rgba(0, 27, 36, 0.1), 0 2px 3px rgba(0, 27, 36, 0.05);
+}
+
+.interlocuteur__surtitre {
+  color: var(--color-text-secondary);
+}
+
+.interlocuteur__identite {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+}
+
+.interlocuteur__avatar {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  border-radius: var(--radius-full);
+  background: var(--color-tint-yellow-solid);
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.interlocuteur__nom {
+  margin: 0;
+  font-size: 21px;
+  line-height: 28px;
+  font-weight: 700;
+  letter-spacing: -0.105px;
+}
+
+.interlocuteur__role {
+  margin: var(--spacing-2xs) 0 0;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 500;
+  color: var(--color-text-secondary);
+}
+
+.interlocuteur__actions {
+  display: flex;
+  gap: var(--spacing-xs);
+}
+
+.interlocuteur__action {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-xs);
+  height: 40px;
+  border: 0;
+  border-radius: var(--radius-full);
+  background: var(--color-tint-blue-bg);
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 600;
+  color: var(--color-tint-blue-text);
+  font-family: inherit;
+  cursor: pointer;
+}
