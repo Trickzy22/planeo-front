@@ -1,0 +1,56 @@
+.demande-devis__contenu {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xl);
+  padding: var(--spacing-sm) var(--spacing-md) var(--spacing-xl);
+}
+
+.demande-devis__haut {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--spacing-sm);
+}
+
+.demande-devis__texte {
+  margin: 0;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--color-text-secondary);
+}
+
+.demande-devis__texte--centre {
+  text-align: center;
+}
+
+.demande-devis__bloc {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+  min-width: 0;
+  margin: 0;
+  padding: var(--spacing-lg) var(--spacing-md);
+  border: none;
+  border-radius: var(--radius-xl);
+  background: var(--color-bg-surface);
+  box-shadow: var(--shadow-s);
+}
+
+.demande-devis__titre {
+  margin: 0;
+  font-size: 21px;
+  line-height: 28px;
+  font-weight: 700;
+  letter-spacing: -0.105px;
+}
+
+.demande-devis__envoi {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+}
+
+.demande-devis__erreur {
+  padding-top: var(--spacing-md);
+  padding-bottom: var(--spacing-xl);
+}
