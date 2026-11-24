@@ -6,9 +6,10 @@ export default function BlocCta({
   texte = 'Décrivez votre événement, on vous rappelle sous 48 h.',
   bouton = 'Prendre contact',
   to = '/contact',
+  couleur = 'jaune',
 }) {
   return (
-    <section className="bloc-cta">
+    <section className={`bloc-cta bloc-cta--${couleur}`}>
       <h2 className="bloc-cta__titre">{titre}</h2>
       <p className="bloc-cta__texte">{texte}</p>
       <div>

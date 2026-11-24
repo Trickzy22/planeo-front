@@ -1,0 +1,36 @@
+.rappel-criteres {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  height: 60px;
+  padding: 0 var(--spacing-md);
+  border-radius: var(--radius-full);
+  background: var(--color-tint-blue-bg);
+}
+
+.rappel-criteres__texte {
+  flex: 1;
+  min-width: 0;
+}
+
+.rappel-criteres__ligne1 {
+  margin: 0;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 600;
+}
+
+.rappel-criteres__ligne2 {
+  margin: 0;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--color-text-secondary);
+}
+
+.rappel-criteres__action {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 600;
+  color: var(--color-tint-blue-text);
+  white-space: nowrap;
+}
