@@ -7,7 +7,8 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "api": "json-server --watch db.json --port 3001"
+    "api": "json-server --watch db.json --port 3001",
+    "lint": "eslint ."
   },
   "dependencies": {
     "react": "^18.3.1",
@@ -15,8 +16,13 @@
     "react-router-dom": "^6.28.0"
   },
   "devDependencies": {
+    "@eslint/js": "^9.17.0",
     "@vitejs/plugin-react": "^4.3.4",
-    "vite": "^5.4.11",
-    "json-server": "^0.17.4"
+    "eslint": "^9.17.0",
+    "eslint-plugin-react": "^7.37.2",
+    "eslint-plugin-react-hooks": "^5.1.0",
+    "globals": "^15.14.0",
+    "json-server": "^0.17.4",
+    "vite": "^5.4.11"
   }
 }
