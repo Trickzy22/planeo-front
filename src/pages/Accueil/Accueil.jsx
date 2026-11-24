@@ -50,6 +50,8 @@ export default function Accueil() {
     <div className="page accueil">
       <Header />
 
+      <main>
+
       <section className="accueil__hero">
         <div className="accueil__hero-degrade" />
         <div className="accueil__hero-contenu">
@@ -82,7 +84,7 @@ export default function Accueil() {
               <div className="conteneur">
                 <TitreSection taille="moyen" surtitre="Réalisations" titre="Ils ont dit" motSurligne="oui" />
               </div>
-              <Carrousel>
+              <Carrousel libelle="Réalisations">
                 {realisations.map((realisation) => (
                   <CarteRealisation key={realisation.id} {...realisation} />
                 ))}
@@ -94,7 +96,7 @@ export default function Accueil() {
                 <TitreSection taille="moyen" surtitre="Nos salles" titre={`${salles.length} lieux`} motSurligne="Incroyable" />
                 <ListeOnglets options={Object.keys(filtresSalles)} valeur={filtre} onChange={setFiltre} />
               </div>
-              <Carrousel key={filtre}>
+              <Carrousel key={filtre} libelle="Nos salles">
                 {sallesFiltrees.map((salle) => (
                   <CarteSalle key={salle.id} {...salle} />
                 ))}
@@ -110,7 +112,7 @@ export default function Accueil() {
               <div className="conteneur">
                 <TitreSection taille="moyen" surtitre="Types d’événements" titre="Un format," motSurligne="votre style" />
               </div>
-              <Carrousel afficherPagination={false}>
+              <Carrousel afficherPagination={false} libelle="Types d’événements">
                 {typesEvenement.map((type) => (
                   <CarteTypeEvenement key={type.id} {...type} />
                 ))}
@@ -125,6 +127,7 @@ export default function Accueil() {
 
         <Footer />
       </div>
+      </main>
     </div>
   )
 }

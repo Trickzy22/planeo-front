@@ -105,6 +105,8 @@ export default function DemandeDevis() {
     <div className="page demande-devis">
       <Header />
 
+      <main>
+
       {chargement && <Chargement />}
 
       {erreurChargement && (
@@ -223,6 +225,8 @@ export default function DemandeDevis() {
           </div>
         </form>
       )}
+
+      </main>
 
       <Footer />
     </div>

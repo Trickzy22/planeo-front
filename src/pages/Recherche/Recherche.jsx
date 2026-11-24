@@ -63,6 +63,7 @@ export default function Recherche() {
     <div className="page recherche">
       <Header />
 
+      <main>
       <form className="recherche__contenu" onSubmit={valider} noValidate>
         <div className="recherche__haut">
           <LienRetour libelle="Retour" />
@@ -122,6 +123,7 @@ export default function Recherche() {
           </Bouton>
         </div>
       </form>
+      </main>
     </div>
   )
 }

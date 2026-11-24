@@ -65,7 +65,7 @@ export default function FicheSalle() {
               <LienRetour libelle="Retour aux résultats" />
             </div>
 
-            <Carrousel largeurCarte={340}>
+            <Carrousel largeurCarte={340} libelle="Photos du lieu">
               {salle.photos.map((photo, index) => (
                 <img key={photo} className="fiche-salle__photo" src={photo} alt={`${salle.nom}, photo ${index + 1}`} />
               ))}
@@ -116,7 +116,7 @@ export default function FicheSalle() {
             {salle.evenements.length > 0 && (
               <section className="fiche-salle__evenements">
                 <h2 className="conteneur fiche-salle__titre">Événements passés ici</h2>
-                <Carrousel afficherPagination={false}>
+                <Carrousel afficherPagination={false} libelle="Événements passés ici">
                   {salle.evenements.map((evenement) => (
                     <CarteRealisation
                       key={evenement.id}
@@ -142,7 +142,7 @@ export default function FicheSalle() {
             </section>
           </main>
 
-          <div className="fiche-salle__barre">
+          <aside className="fiche-salle__barre" aria-label="Demander un devis">
             <div>
               <p className="fiche-salle__texte">Prix estimé</p>
               <p className="fiche-salle__prix">{formaterPrix(salle.prix)}</p>
@@ -150,7 +150,7 @@ export default function FicheSalle() {
             <Bouton variante="primaire" to={`/salles/${salle.id}/devis`}>
               Demander un devis
             </Bouton>
-          </div>
+          </aside>
         </>
       )}
 
