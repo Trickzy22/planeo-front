@@ -40,3 +40,15 @@
 .alerte__message {
   font-size: 16px;
 }
+
+.alerte--erreur {
+  background: var(--color-bg-danger-subtle);
+}
+
+.alerte--erreur .alerte__pastille {
+  background: var(--color-tint-coral-solid);
+}
+
+.alerte--erreur .alerte__titre {
+  color: var(--color-text-danger);
+}
