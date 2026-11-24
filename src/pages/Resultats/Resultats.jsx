@@ -5,6 +5,7 @@ import RappelCriteres from '../../components/RappelCriteres/RappelCriteres'
 import ListeOnglets from '../../components/Onglet/ListeOnglets'
 import CarteSalle from '../../components/CarteSalle/CarteSalle'
 import BlocCta from '../../components/BlocCta/BlocCta'
+import AucunResultat from '../../components/AucunResultat/AucunResultat'
 import Chargement from '../../components/Chargement/Chargement'
 import MessageErreur from '../../components/MessageErreur/MessageErreur'
 import { useRecherche } from '../../context/RechercheContext'
@@ -20,9 +21,17 @@ function formaterDate(dateIso) {
   return `${jour}/${mois}/${annee}`
 }
 
+// Ajoute (ou retire) des jours à une date "AAAA-MM-JJ"
+function decalerDate(dateIso, jours) {
+  const date = new Date(`${dateIso}T12:00:00`)
+  date.setDate(date.getDate() + jours)
+  const mois = String(date.getMonth() + 1).padStart(2, '0')
+  const jour = String(date.getDate()).padStart(2, '0')
+  return `${date.getFullYear()}-${mois}-${jour}`
+}
 
 export default function Resultats() {
-  const { criteres } = useRecherche()
+  const { criteres, modifierCritere } = useRecherche()
   const [salles, setSalles] = useState([])
   const [filtre, setFiltre] = useState('Toutes')
   const [chargement, setChargement] = useState(true)
@@ -63,6 +72,13 @@ export default function Resultats() {
     .filter(Boolean)
     .join(' · ')
 
+  // Une semaine avant, une et deux semaines après
+  const datesProches = criteres.date
+    ? [-7, 7, 14].map((jours) => {
+        const valeur = decalerDate(criteres.date, jours)
+        return { valeur, libelle: formaterDate(valeur).slice(0, 5) }
+      })
+    : []
 
   return (
     <div className="page resultats">
@@ -92,8 +108,15 @@ export default function Resultats() {
         {chargement && <Chargement />}
         {erreur && <MessageErreur message={erreur} />}
 
+        {!chargement && !erreur && sallesDisponibles.length === 0 && (
+          <AucunResultat
+            date={date}
+            datesProches={datesProches}
+            onChoisirDate={(nouvelleDate) => modifierCritere('date', nouvelleDate)}
+          />
+        )}
 
-        {!chargement && !erreur && (
+        {!chargement && !erreur && sallesDisponibles.length > 0 && (
           <div className="resultats__liste">
             {sallesAffichees.map((salle) => (
               <CarteSalle key={salle.id} {...salle} dispo={date} avecPrix />
