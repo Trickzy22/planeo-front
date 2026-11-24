@@ -25,7 +25,7 @@
   line-height: 28px;
   font-weight: 700;
   letter-spacing: -0.105px;
-  color: #000;
+  color: var(--color-text-primary);
 }
 
 .header__logo span {
