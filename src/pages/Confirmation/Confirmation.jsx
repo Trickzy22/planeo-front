@@ -12,6 +12,8 @@ import { useRecherche } from '../../context/RechercheContext'
 import { recupererDonnees } from '../../services/api'
 import './Confirmation.css'
 
+const MESSAGE_INTROUVABLE = 'Cette demande n’existe pas.'
+
 export default function Confirmation() {
   const { id = '1' } = useParams()
   const { reinitialiser } = useRecherche()
@@ -37,7 +39,13 @@ export default function Confirmation() {
         setDemande(donneesDemande)
         setInterlocuteur(donneesInterlocuteur)
       })
-      .catch(() => setErreur('Impossible de charger les données. Vérifiez que l’API est lancée.'))
+      .catch((erreurChargement) =>
+        setErreur(
+          erreurChargement.message === 'introuvable'
+            ? MESSAGE_INTROUVABLE
+            : 'Impossible de charger les données. Vérifiez que l’API est lancée.'
+        )
+      )
       .finally(() => setChargement(false))
   }, [id])
 
@@ -49,7 +57,7 @@ export default function Confirmation() {
 
       {erreur && (
         <div className="conteneur">
-          <MessageErreur message={erreur} avecReessayer />
+          <MessageErreur message={erreur} avecReessayer={erreur !== MESSAGE_INTROUVABLE} />
         </div>
       )}
 
