@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import Header from '../../components/Header/Header'
 import Footer from '../../components/Footer/Footer'
@@ -18,11 +18,16 @@ export default function Confirmation() {
   const [demande, setDemande] = useState(null)
   const [interlocuteur, setInterlocuteur] = useState(null)
   const [chargement, setChargement] = useState(true)
+  const titreRef = useRef(null)
   const [erreur, setErreur] = useState('')
 
   useEffect(() => {
     reinitialiser()
   }, [reinitialiser])
+
+  useEffect(() => {
+    if (!chargement && !erreur) titreRef.current?.focus()
+  }, [chargement, erreur])
 
   useEffect(() => {
     document.title = 'Planeo · Demande envoyée'
@@ -56,7 +61,9 @@ export default function Confirmation() {
                 <img src="/assets/icons/check-grand.svg" alt="" width="30" height="30" />
               </span>
             </div>
-            <h1 className="confirmation__titre">Demande envoyée !</h1>
+            <h1 className="confirmation__titre" ref={titreRef} tabIndex={-1}>
+              Demande envoyée !
+            </h1>
             <p className="confirmation__texte">
               Merci {demande.prenom}, {interlocuteur.prenom} vous répond sous 48 h ouvrées.
             </p>
