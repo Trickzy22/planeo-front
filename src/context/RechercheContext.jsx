@@ -1,4 +1,4 @@
-import { createContext, useContext, useState } from 'react'
+import { createContext, useCallback, useContext, useState } from 'react'
 
 const criteresParDefaut = {
   typeEvenement: 'Mariage',
@@ -16,7 +16,7 @@ export function RechercheProvider({ children }) {
     setCriteres((precedents) => ({ ...precedents, [nom]: valeur }))
   }
 
-  const reinitialiser = () => setCriteres(criteresParDefaut)
+  const reinitialiser = useCallback(() => setCriteres(criteresParDefaut), [])
 
   return (
     <RechercheContext.Provider value={{ criteres, modifierCritere, reinitialiser }}>

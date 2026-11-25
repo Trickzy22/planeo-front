@@ -8,15 +8,21 @@ import Interlocuteur from '../../components/Interlocuteur/Interlocuteur'
 import Alerte from '../../components/Alerte/Alerte'
 import Chargement from '../../components/Chargement/Chargement'
 import MessageErreur from '../../components/MessageErreur/MessageErreur'
+import { useRecherche } from '../../context/RechercheContext'
 import { recupererDonnees } from '../../services/api'
 import './Confirmation.css'
 
 export default function Confirmation() {
   const { id = '1' } = useParams()
+  const { reinitialiser } = useRecherche()
   const [demande, setDemande] = useState(null)
   const [interlocuteur, setInterlocuteur] = useState(null)
   const [chargement, setChargement] = useState(true)
   const [erreur, setErreur] = useState('')
+
+  useEffect(() => {
+    reinitialiser()
+  }, [reinitialiser])
 
   useEffect(() => {
     document.title = 'Planeo · Demande envoyée'
